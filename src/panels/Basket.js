@@ -104,7 +104,7 @@ const Basket = ({ match: { params: { areaId, itemId }}, foodAreas, order }) => {
         </Link>
       </div>
       <div className="Place__choice">
-        <h3>Время:</h3>
+        <h3>Время :</h3>
         <div className="Place__choice-item">
           <span>Как можно быстрее</span>
           <Checkbox 
@@ -122,7 +122,7 @@ const Basket = ({ match: { params: { areaId, itemId }}, foodAreas, order }) => {
         <div className="Place__choice-item">
           <span>Назначить</span>
           <input
-            value={time}
+            value={parseInt(time)}
             onFocus={() => {
               setFaster(false);
             }}
